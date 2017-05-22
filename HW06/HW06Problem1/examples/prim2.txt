@@ -1,0 +1,23 @@
+			iinput @broj
+			load r1, @broj
+			increment r1
+			load r2, @msg1
+			load r15, @nula		
+			load r5, @pet
+			load r6, @msg2
+			echo r2
+@petlja:	testEquals r5, r15
+			jumpIfTrue @gotovo
+			echo r1
+			echo r6
+			increment r1
+			decrement r5
+			jump @petlja
+
+@gotovo:	halt
+		
+@broj:		DEFINT 0
+@msg1:		DEFSTR "Sljedećih 5 brojeva je:\n"
+@nula:		DEFINT 0
+@pet:		DEFINT 5
+@msg2:		DEFSTR "\n"

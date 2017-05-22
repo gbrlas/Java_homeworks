@@ -1,0 +1,7 @@
+query firstName = "Ivan"
+query jmag = 0000000006
+query jmbag = 0000000006
+query jmbag = 0000000006 and firstName = "Ivan"
+query 
+qery
+quit
